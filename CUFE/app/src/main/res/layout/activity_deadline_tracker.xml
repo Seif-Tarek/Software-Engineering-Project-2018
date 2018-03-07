@@ -4,71 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scaleType = "fitXY"
     android:background="@drawable/background"
-    tools:context="com.example.ahmed.cufe.DeadlineTracker"
+    android:scaleType="fitXY"
     android:theme="@style/TextAppearance.AppCompat"
-    >
+    tools:context="com.example.ahmed.cufe.DeadlineTracker">
+
 
     <TextView
-        android:id="@+id/EmptyTracker_Text"
+        android:id="@+id/No_Deadlines_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="256dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/transparent"
-        android:clickable="false"
-        android:text="No deadlines added"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
+        android:text="No Deadlines"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="207dp"
-        app:layout_constraintBottom_toTopOf="@+id/EmptyTracker_Text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <EditText
-            android:id="@+id/Header_Text"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:background="@color/midnightBlue"
-            android:backgroundTint="@color/midnightBlue"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Deadlines Tracker"
-            android:textAlignment="center"
-            android:textColor="@color/floralWhite"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-    </GridLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/NewDeadline_floatingActionButton"
         android:layout_width="79dp"
-        android:layout_height="97dp"
+        android:layout_height="94dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="368dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983"
+        app:layout_constraintVertical_bias="0.812"
         app:srcCompat="@android:drawable/ic_input_add" />
-
 </android.support.constraint.ConstraintLayout>

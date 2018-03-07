@@ -6,4 +6,13 @@
     <color name="floralWhite">#fffaf0</color>
     <color name="midnightBlue">#191970</color>
 
+
+
+
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+
 </resources>

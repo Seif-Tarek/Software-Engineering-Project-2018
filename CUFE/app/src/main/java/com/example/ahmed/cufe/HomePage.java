@@ -1,5 +1,6 @@
 package com.example.ahmed.cufe;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,8 +15,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 
+
 public class HomePage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,15 +45,27 @@ public class HomePage extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
+        //If Deadlines Tracker was invoked:
         ImageButton DeadLineTracker_Invoke = (ImageButton) findViewById(R.id.Deadlines_Btn);
         DeadLineTracker_Invoke.setOnClickListener(
-                new ImageButton.OnClickListener(){
+                new ImageButton.OnClickListener() {
                     public void onClick(View v){
-                        setContentView(R.layout.activity_new_deadline);
+                        Intent To_Deadlines = new Intent("com.example.ahmed.cufe.Deadlines_Track");
+                        startActivity(To_Deadlines);
                     }
-                }
+                });
 
-        );
+
+    }
+
+    //Function Deadline Tracker Invocation: if user presses Deadlines Tracker Button, Read this:
+    private void DeadlineButton_Invoked()
+    {
+
+
+
+
     }
 
     @Override
