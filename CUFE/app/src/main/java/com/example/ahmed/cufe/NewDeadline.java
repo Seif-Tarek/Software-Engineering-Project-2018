@@ -62,14 +62,13 @@ public class NewDeadline extends AppCompatActivity {
         //Reading Values:
         Deadline_Write newDeadlineFile = new Deadline_Write(DeadlineLabel_Text.getText().toString(), getApplicationContext());
 
-
         newDeadlineFile.addDeadlineLabel(DeadlineLabel_Text.getText().toString());
         newDeadlineFile.addDeadlineDescription(DeadlineDesc_Text.getText().toString());
 
-        if( Radiobutton_Quiz.isChecked()) newDeadlineFile.addDeadlineType("1");
-        else if( Radiobutton_Project.isChecked()) newDeadlineFile.addDeadlineType("2");
-        else if( Radiobutton_Ass.isChecked()) newDeadlineFile.addDeadlineType("3");
-        else newDeadlineFile.addDeadlineType("4");
+        if( Radiobutton_Quiz.isChecked()) newDeadlineFile.addDeadlineType("Quiz");
+        else if( Radiobutton_Project.isChecked()) newDeadlineFile.addDeadlineType("Project");
+        else if( Radiobutton_Ass.isChecked()) newDeadlineFile.addDeadlineType("Assignment");
+        else newDeadlineFile.addDeadlineType("Other");
 
         newDeadlineFile.addDeadlineDueDate(checkDigit(DeadlineDueDate_Text.getDayOfMonth())+"/"+checkDigit(DeadlineDueDate_Text.getMonth()+1)+"/"+DeadlineDueDate_Text.getYear());
         newDeadlineFile.addDeadlineTimeElapsed(DeadlineDaysToRemind_Text.getText().toString(),DeadlineHoursToRemind_Text.getText().toString());

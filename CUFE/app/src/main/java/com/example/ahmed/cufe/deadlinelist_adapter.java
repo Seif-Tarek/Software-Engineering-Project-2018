@@ -6,6 +6,7 @@ package com.example.ahmed.cufe;
 
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -25,6 +26,7 @@ public class deadlinelist_adapter extends RecyclerView.Adapter<deadlinelist_adap
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name, description, type, DueDate, HoursAndDaysLeft;
         public ImageView thumbnail;
+        private View thisView;
 
         public MyViewHolder(View view) {
             super(view);
@@ -35,6 +37,7 @@ public class deadlinelist_adapter extends RecyclerView.Adapter<deadlinelist_adap
             HoursAndDaysLeft = view.findViewById(R.id.HoursAndDaysLeft);
             thumbnail = view.findViewById(R.id.thumbnail);
 
+            thisView = view;
         }
     }
 
@@ -56,17 +59,24 @@ public class deadlinelist_adapter extends RecyclerView.Adapter<deadlinelist_adap
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         final Deadline deadline = cartList.get(position);
         holder.name.setText(deadline.getLabel());
-        holder.description.setText( deadline.getDescription());
+       // holder.description.setText( deadline.getDescription());
+        holder.description.setText( " ");
         holder.type.setText(deadline.getType());
-        holder.DueDate.setText(deadline.getDueDate());
+        holder.DueDate.setText("Due: "+ deadline.getDueDate());
         holder.HoursAndDaysLeft.setText(deadline.getHoursBefore()+" Hours,and "+deadline.getDaysBefor()+" Days");
-        //holder.thumbnail.setImageDrawable(Drawable.createFromPath(deadline.getThumbnail()));
-        holder.thumbnail.setBackground(Drawable.createFromPath(deadline.getThumbnail()));
+        holder.thumbnail.setImageResource(deadline.getThumbnail());
+        //holder.thumbnail.setBackground(Drawable.createFromPath(deadline.getThumbnail()));
 
 
-       /*Glide.with(context)
-                .load(deadline.getThumbnail())
-                .into(holder.thumbnail);*/
+        if(deadline.getType().equals("Assignment"))
+            holder.thisView.setBackgroundColor(Color.parseColor("#C3D9FF"));
+          else if(deadline.getType().equals("Quiz"))
+               holder.thisView.setBackgroundColor(Color.parseColor("#FFFFCC"));
+        else if(deadline.getType().equals("Project"))
+            holder.thisView.setBackgroundColor(Color.parseColor("#FFBBE8"));
+        else
+            holder.thisView.setBackgroundColor(Color.parseColor("#CAF99B"));
+
     }
     // recipe
     @Override

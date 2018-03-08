@@ -1,6 +1,7 @@
 package com.example.ahmed.cufe;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
 
@@ -18,6 +19,8 @@ public class Deadline {
 
     private String Label, Description, Type, DueDate, DaysBefor, HoursBefore;
 
+    private static final String TAG = "Deadline_Instantiation";
+
     Deadline(String FileName,Context cntx)
     {
 
@@ -28,11 +31,18 @@ public class Deadline {
             BufferedReader Readings_Buffer = new BufferedReader(Reader);
 
             this.setLabel(Readings_Buffer.readLine().toString());
+            Log.i(TAG,"Label: "+ this.getLabel());
             this.setDescription(Readings_Buffer.readLine().toString());
+            Log.i(TAG,"Desc: "+ this.getDescription());
             this.setType(Readings_Buffer.readLine().toString());
+            Log.i(TAG,"Type: "+ this.getType());
             this.setDueDate(Readings_Buffer.readLine().toString());
+            Log.i(TAG,"Duedate: "+ this.getDueDate());
             this.setDaysBefor(Readings_Buffer.readLine().toString());
+            Log.i(TAG,"daysBefore: "+ this.getDaysBefor());
             this.setHoursBefore(Readings_Buffer.readLine().toString());
+            Log.i(TAG,"Hours before: "+ this.getHoursBefore());
+
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -77,11 +87,12 @@ public class Deadline {
     }
     public String getType()
     {
+        /*
         if( this.Type == "1") return "Quiz";
         else if(this.Type == "2") return "Project";
         else if(this.Type == "3") return "Assignment";
-        else  return "Other..";
-
+        else  return "Other..";*/
+        return this.Type;
     }
 
     public void setDueDate(String DueDateInput)
@@ -126,12 +137,30 @@ public class Deadline {
         return Label_Basic;
     }
 
-    public String getThumbnail()
+    public int getThumbnail()
     {
-        if(this.Type == "1") return "@drawable/quiz";
-        else if(this.Type == "2") return "@drawable/assignment";
-        else if(this.Type == "3") return "@drawable/projectmanagemant";
-        else return "@drawable/other";
+        Log.i(TAG," Getting Thumbnail: " +"Type: " + this.getType()+" Label: "+this.getLabel());
+        if(this.Type.equals("Quiz"))
+        {
+            Log.i(TAG,"Returning Quiz");
+            return R.drawable.quiz;
+
+        }
+        else if(this.Type.equals("Assignment"))
+        {
+            Log.i(TAG,"Returning Assignment");
+            return R.drawable.assignment;
+        }
+        else if(this.Type.equals("Project"))
+        {
+            Log.i(TAG,"Returning Project");
+            return R.drawable.projectmanagemant;
+        }
+        else
+        {
+            Log.i(TAG,"Returning Other");
+            return R.drawable.other;
+        }
     }
 
     public boolean beginNotifying(){return true;}

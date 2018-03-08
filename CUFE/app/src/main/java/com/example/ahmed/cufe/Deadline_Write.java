@@ -1,6 +1,8 @@
 package com.example.ahmed.cufe;
 
 import android.content.Context;
+import android.util.EventLogTags;
+import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
 
@@ -21,6 +23,8 @@ public class Deadline_Write {
     static final String All_Files_Names = "AllFiles";
     private String DocumentName;
     private FileOutputStream NewDeadlineFile;
+
+    private static final String TAG = "Deadline_write";
 
     private void RegisterFile(String FileName,Context cntx) throws IOException {
       //This method is invoked only if the file for deadline is available name-wise:
@@ -85,7 +89,7 @@ public class Deadline_Write {
         Label += "\n";
         try {
             this.NewDeadlineFile.write(Label.getBytes());
-
+            Log.i(TAG,"Label Written: "+ Label);
         }
         catch (Exception e)
         {
@@ -97,6 +101,7 @@ public class Deadline_Write {
     {
         if( Description == null || Description == "")
             Description = "NO_Description";
+        Log.i(TAG,"Desc Written: "+ Description);
 
         try {
             this.NewDeadlineFile.write( Description.getBytes());
@@ -112,6 +117,8 @@ public class Deadline_Write {
         try {
             Type += "\n";
             this.NewDeadlineFile.write( Type.getBytes());
+            Log.i(TAG,"Type Written: "+ Type);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -124,6 +131,8 @@ public class Deadline_Write {
             this.NewDeadlineFile.write( "\n".getBytes());
             this.NewDeadlineFile.write( Hours.getBytes());
             this.NewDeadlineFile.write( "\n".getBytes());
+            Log.i(TAG,"Time Written: "+ Days + ", " + Hours);
+
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -135,6 +144,8 @@ public class Deadline_Write {
         try {
             this.NewDeadlineFile.write( Date.getBytes());
             this.NewDeadlineFile.write( "\n".getBytes());
+            Log.i(TAG,"DueDate Written: "+ Date);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
