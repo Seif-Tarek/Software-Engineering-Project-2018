@@ -126,5 +126,13 @@ public class Deadline {
         return Label_Basic;
     }
 
+    public String getThumbnail()
+    {
+        if(this.Type == "1") return "@drawable/quiz";
+        else if(this.Type == "2") return "@drawable/assignment";
+        else if(this.Type == "3") return "@drawable/projectmanagemant";
+        else return "@drawable/other";
+    }
+
     public boolean beginNotifying(){return true;}
 }

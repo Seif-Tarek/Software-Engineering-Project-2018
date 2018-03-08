@@ -37,7 +37,7 @@ public class NewDeadline extends AppCompatActivity {
                     public void onClick(View v){
                         Log.i(TAG,"Listener is invoked");
 
-
+                        CreateDeadline();
                         //Shift Back to Deadlines Viewer:
                         Intent To_Deadlines = new Intent("com.example.ahmed.cufe.Deadlines_Track");
                         startActivity(To_Deadlines);
@@ -71,12 +71,15 @@ public class NewDeadline extends AppCompatActivity {
         else if( Radiobutton_Ass.isChecked()) newDeadlineFile.addDeadlineType("3");
         else newDeadlineFile.addDeadlineType("4");
 
-        newDeadlineFile.addDeadlineDueDate(DeadlineDueDate_Text.toString());
+        newDeadlineFile.addDeadlineDueDate(checkDigit(DeadlineDueDate_Text.getDayOfMonth())+"/"+checkDigit(DeadlineDueDate_Text.getMonth()+1)+"/"+DeadlineDueDate_Text.getYear());
         newDeadlineFile.addDeadlineTimeElapsed(DeadlineDaysToRemind_Text.getText().toString(),DeadlineHoursToRemind_Text.getText().toString());
         newDeadlineFile.CloseFile();
 
     }
-
+    public String checkDigit(int number)
+    {
+        return number<=9?"0"+number:String.valueOf(number);
+    }
 }
 
 

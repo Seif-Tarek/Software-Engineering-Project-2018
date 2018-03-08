@@ -37,7 +37,7 @@ public class ReadDeadlines {
       return _instance;
      }
 
-   private ReadDeadlines(Context cntx,List<Deadline> deadlinesLiseIn)
+   public ReadDeadlines(Context cntx,List<Deadline> deadlinesLiseIn)
     {
         DeadlinesList = deadlinesLiseIn;
         LoadAllDeadlines(cntx);

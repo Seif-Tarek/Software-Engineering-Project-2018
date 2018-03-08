@@ -58,7 +58,7 @@ public class Deadlines_Track extends AppCompatActivity {
 
 
 
-       /* FloatingActionButton Add_Deadline_Invoke = (FloatingActionButton) findViewById(R.id.NewDeadline_floatingActionButton);
+       FloatingActionButton Add_Deadline_Invoke = (FloatingActionButton) findViewById(R.id.NewDeadline_floatingActionButton);
         Add_Deadline_Invoke.setOnClickListener(
                 new FloatingActionButton.OnClickListener(){
                     public void onClick(View v){
@@ -67,7 +67,7 @@ public class Deadlines_Track extends AppCompatActivity {
                     }
                 }
 
-        );*/
+        );
     }
 
     public void ReadAllDeadlines(ReadDeadlines Reader)
@@ -97,7 +97,7 @@ public class Deadlines_Track extends AppCompatActivity {
     {
         //load all:
         try{
-            ReadDeadlines Reader = ReadDeadlines.get_instance(getApplicationContext(), this.cartList);
+            ReadDeadlines Reader = new ReadDeadlines(getApplicationContext(), this.cartList);
              //First is to read all Deadlines;
 
             //Create at least one text View:

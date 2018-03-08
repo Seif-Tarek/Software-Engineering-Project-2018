@@ -37,6 +37,7 @@
         </activity>
         <activity android:name=".Deadlines_Track">
 
+            android:theme="@style/AppTheme.PopupOverlay">
             <intent-filter>
                 <action android:name="com.example.ahmed.cufe.Deadlines_Track" />
 

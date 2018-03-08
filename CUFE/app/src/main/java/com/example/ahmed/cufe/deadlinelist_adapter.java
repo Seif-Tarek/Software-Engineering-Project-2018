@@ -6,6 +6,7 @@ package com.example.ahmed.cufe;
 
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +24,7 @@ public class deadlinelist_adapter extends RecyclerView.Adapter<deadlinelist_adap
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name, description, type, DueDate, HoursAndDaysLeft;
-
+        public ImageView thumbnail;
 
         public MyViewHolder(View view) {
             super(view);
@@ -32,6 +33,8 @@ public class deadlinelist_adapter extends RecyclerView.Adapter<deadlinelist_adap
             type = view.findViewById(R.id.type);
             DueDate = view.findViewById(R.id.DueDate);
             HoursAndDaysLeft = view.findViewById(R.id.HoursAndDaysLeft);
+            thumbnail = view.findViewById(R.id.thumbnail);
+
         }
     }
 
@@ -57,9 +60,12 @@ public class deadlinelist_adapter extends RecyclerView.Adapter<deadlinelist_adap
         holder.type.setText(deadline.getType());
         holder.DueDate.setText(deadline.getDueDate());
         holder.HoursAndDaysLeft.setText(deadline.getHoursBefore()+" Hours,and "+deadline.getDaysBefor()+" Days");
+        //holder.thumbnail.setImageDrawable(Drawable.createFromPath(deadline.getThumbnail()));
+        holder.thumbnail.setBackground(Drawable.createFromPath(deadline.getThumbnail()));
 
-       /* Glide.with(context)
-                .load(recipe.getThumbnail())
+
+       /*Glide.with(context)
+                .load(deadline.getThumbnail())
                 .into(holder.thumbnail);*/
     }
     // recipe
