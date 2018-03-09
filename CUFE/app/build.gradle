@@ -68,11 +68,8 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:+'
 }
 <<<<<<< HEAD
-<<<<<<< HEAD
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:+'
 }
-=======
->>>>>>> bcf26da50c3b564f8d1398d2311509390a50dd8b
 =======
 >>>>>>> bcf26da50c3b564f8d1398d2311509390a50dd8b

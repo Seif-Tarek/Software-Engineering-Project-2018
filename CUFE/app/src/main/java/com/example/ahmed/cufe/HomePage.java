@@ -84,16 +84,6 @@ public class HomePage extends AppCompatActivity
                     }
                 });
 
-        //If CourseWorke Tracker was invoked:
-        ImageButton CourseWorkeTracker_Invoke = (ImageButton) findViewById(R.id.CourseWork_Btn);
-        CourseWorkeTracker_Invoke.setOnClickListener(
-                new ImageButton.OnClickListener() {
-                    public void onClick(View v){
-                        Intent To_CourseWorke = new Intent("com.example.ahmed.cufe.Course_work");
-                        startActivity(To_CourseWorke);
-                    }
-                });
-
 
     }
 
