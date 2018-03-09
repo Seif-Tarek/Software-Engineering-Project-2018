@@ -55,6 +55,34 @@ public class HomePage extends AppCompatActivity
                         startActivity(To_Deadlines);
                     }
                 });
+        ImageButton Attendance_Invoke = (ImageButton) findViewById(R.id.Attendence_Btn);
+        Attendance_Invoke.setOnClickListener(
+                new ImageButton.OnClickListener() {
+                    public void onClick(View v){
+                        Intent To_Attendance = new Intent("com.example.ahmed.cufe.Attendancee");
+                        startActivity(To_Attendance);
+                    }
+                });
+
+        ImageButton News_Invoke = (ImageButton) findViewById(R.id.News_Btn);
+        News_Invoke.setOnClickListener(
+                new ImageButton.OnClickListener() {
+                    public void onClick(View v){
+                        Intent To_News = new Intent("com.example.ahmed.cufe.News");
+                        startActivity(To_News);
+                    }
+                });
+
+
+        //If CourseWorke Tracker was invoked:
+        ImageButton CourseWorkeTracker_Invoke = (ImageButton) findViewById(R.id.CourseWork_Btn);
+        CourseWorkeTracker_Invoke.setOnClickListener(
+                new ImageButton.OnClickListener() {
+                    public void onClick(View v){
+                        Intent To_CourseWorke = new Intent("com.example.ahmed.cufe.Course_work");
+                        startActivity(To_CourseWorke);
+                    }
+                });
 
 
     }

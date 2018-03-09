@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ahmed.cufe">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -36,10 +36,35 @@
             </intent-filter>
         </activity>
         <activity android:name=".Deadlines_Track">
-
             android:theme="@style/AppTheme.PopupOverlay">
             <intent-filter>
                 <action android:name="com.example.ahmed.cufe.Deadlines_Track" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+<<<<<<< HEAD
+        <activity
+            android:name=".Attendancee"
+            android:label="@string/title_activity_attendancee"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.example.ahmed.cufe.Attendancee" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".News"
+            android:label="@string/title_activity_news"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.example.ahmed.cufe.News" />
+=======
+        <activity android:name=".Course_work">
+            <intent-filter>
+                <action android:name="com.example.ahmed.cufe.Course_work" />
+>>>>>>> bcf26da50c3b564f8d1398d2311509390a50dd8b
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

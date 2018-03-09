@@ -64,3 +64,12 @@ dependencies {
     implementation 'com.android.volley:volley:1.0.0'
     implementation 'com.google.code.gson:gson:2.6.2'
 }
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
+<<<<<<< HEAD
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
+=======
+>>>>>>> bcf26da50c3b564f8d1398d2311509390a50dd8b

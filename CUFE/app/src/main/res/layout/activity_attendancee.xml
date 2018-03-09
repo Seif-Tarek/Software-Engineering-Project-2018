@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmed.cufe.Attendancee">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000080">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="170dp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mine"
+                    android:text=" CourseName "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    tools:text="CourseName" />
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="170sp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mine"
+                    android:text="SessionName"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="170sp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mine"
+                    android:text=" WeekNumber "
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="170sp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mine"
+                    android:text="         Day         "
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="170sp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mine"
+                    android:text="    BeginTime    "
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+                />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="170sp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mine"
+                    android:text="    EndTime   "
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <include
+        layout="@layout/content_attendancee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="77dp" />
+
+</android.support.design.widget.CoordinatorLayout>

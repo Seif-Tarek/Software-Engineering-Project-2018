@@ -7,4 +7,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_attendancee">Attendancee</string>
+    <string name="title_activity_news">News</string>
 </resources>

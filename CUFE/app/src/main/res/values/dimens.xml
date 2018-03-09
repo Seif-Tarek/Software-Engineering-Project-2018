@@ -9,15 +9,15 @@
 
     <!--?xml version="1.0" encoding="utf-8"?-->
 
-        <dimen name="activity_padding">16dp</dimen>
-        <dimen name="placeholder_image">100dp</dimen>
-        <dimen name="placeholder_text_height">14dp</dimen>
-        <dimen name="activity_padding_horizontal">16dp</dimen>
-        <dimen name="padding_10">10dp</dimen>
-        <dimen name="name">40dp</dimen>
-        <dimen name="chef">40dp</dimen>
-        <dimen name="timestamp">25dp</dimen>
-        <dimen name="description">25dp</dimen>
-        <dimen name="price">25dp</dimen>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="placeholder_image">100dp</dimen>
+    <dimen name="placeholder_text_height">14dp</dimen>
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="name">40dp</dimen>
+    <dimen name="chef">40dp</dimen>
+    <dimen name="timestamp">25dp</dimen>
+    <dimen name="description">25dp</dimen>
+    <dimen name="price">25dp</dimen>
 
 </resources>
