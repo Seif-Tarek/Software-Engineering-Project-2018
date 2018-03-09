@@ -44,6 +44,7 @@
             </intent-filter>
         </activity>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <activity
             android:name=".Attendancee"
             android:label="@string/title_activity_attendancee"
@@ -60,6 +61,11 @@
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="com.example.ahmed.cufe.News" />
+=======
+        <activity android:name=".Course_work">
+            <intent-filter>
+                <action android:name="com.example.ahmed.cufe.Course_work" />
+>>>>>>> bcf26da50c3b564f8d1398d2311509390a50dd8b
 =======
         <activity android:name=".Course_work">
             <intent-filter>
