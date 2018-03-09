@@ -36,10 +36,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".Deadlines_Track">
-
             android:theme="@style/AppTheme.PopupOverlay">
             <intent-filter>
                 <action android:name="com.example.ahmed.cufe.Deadlines_Track" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Course_work">
+            <intent-filter>
+                <action android:name="com.example.ahmed.cufe.Course_work" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

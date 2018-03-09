@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.ahmed.cufe.Course_work">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:width="190dp"
+                android:height="60dp"
+                android:background="@color/midnightBlue"
+                android:text="Subject Name"
+                android:textColor="@color/placeholder_bg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Midterm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:width="77dp"
+                android:height="60dp"
+                android:background="@color/midnightBlue"
+                android:text="Midterm"
+                android:textColor="@color/placeholder_bg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Daily_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:width="65dp"
+                android:height="60dp"
+                android:background="@color/midnightBlue"
+                android:text="Daily work"
+                android:textColor="@color/placeholder_bg"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/Sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="190dp"
+                android:height="35dp"
+                android:text="Sub1"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/MT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="77dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/DW1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="65dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/Sub2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="190dp"
+                android:height="35dp"
+                android:text="Sub2"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/MT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="77dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/DW2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="65dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/Sub3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="190dp"
+                android:height="35dp"
+                android:text="Sub3"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/MT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="77dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/DW3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="65dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/Sub4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="190dp"
+                android:height="35dp"
+                android:text="Sub4"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/MT4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="77dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/DW4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="65dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/Sub5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="190dp"
+                android:height="35dp"
+                android:text="Sub5"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/MT5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="77dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/DW5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="65dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/Sub6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="190dp"
+                android:height="35dp"
+                android:text="Sub6"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/MT6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="77dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/DW6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="65dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/Sub7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="190dp"
+                android:height="35dp"
+                android:text="Sub7"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/MT7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="77dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/DW7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:width="65dp"
+                android:height="35dp"
+                android:text="Not Yet"
+                android:textColor="@color/midnightBlue"
+                android:textSize="17sp"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
