@@ -43,7 +43,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity
             android:name=".Attendancee"
             android:label="@string/title_activity_attendancee"
@@ -54,18 +53,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".News"
-            android:label="@string/title_activity_news"
-            android:theme="@style/AppTheme">
+
+        <activity android:name=".News">
             <intent-filter>
                 <action android:name="com.example.ahmed.cufe.News" />
-=======
+                android:label="@string/title_activity_news"
+                android:theme="@style/AppTheme">
+            </intent-filter>
+        </activity>
+
+
+
+
         <activity android:name=".Course_work">
             <intent-filter>
                 <action android:name="com.example.ahmed.cufe.Course_work" />
->>>>>>> bcf26da50c3b564f8d1398d2311509390a50dd8b
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
